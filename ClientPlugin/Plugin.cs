@@ -9,7 +9,7 @@ namespace ClientPlugin
     // ReSharper disable once UnusedType.Global
     public class Plugin : IPlugin, IDisposable
     {
-        public const string Name = "PluginTemplate";
+        public const string Name = "CockpitRpc";
         public static Plugin Instance { get; private set; }
 
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
@@ -18,8 +18,9 @@ namespace ClientPlugin
             Instance = this;
 
             // TODO: Put your one time initialization code here.
+            /*
             Harmony harmony = new Harmony(Name);
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            harmony.PatchAll(Assembly.GetExecutingAssembly());*/
         }
 
         public void Dispose()
